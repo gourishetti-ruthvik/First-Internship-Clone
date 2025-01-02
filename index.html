@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>NxtTalks</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="container-fluid background-box">
+        <div class="row" id="First">
+            <div class="col-6 first-section" style="z-index:1">
+                <img style="padding-left: 70px; padding-right: 25px; margin-bottom: 35px;" src="https://assets-global.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff4d11fd25fa9_Frame%201000003044%20(2).svg" alt="" />
+
+                <h1 style="font-weight: bold; font-size: 50px; padding-left:60px; margin-top: 100px;">
+                    A Sr. Manager at <img src="https://assets-global.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff44006d25f7f_Frame%201000002982.svg" alt="" /><br>
+                    Teaches You About<br>
+                    <span style="color:chartreuse;">Product Management</span>
+                </h1>
+
+                <div style="padding-left: 60px;">
+                    <div class="pt-4 mt-5">
+                        <a href="#Sixth"> <button class="btn btn-primary" style="padding: 10px 150px 10px 150px; border-radius: 10px;" >Claim Free Access</button> </a>
+                    </div>
+                    <div class="pt-4">
+                        <button class="btn" style="padding: 10px 165px 10px 165px; border-radius: 10px; background-color: transparent;border:1px solid white;"><span style="color:white;">Watch Trailer</span></button>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center" style="margin-left: -250px;">
+                        <p class="pt-3">Get 1 Podcast worth 2000 </p><img alt="" src="https://assets-global.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff450f5d25f9f_Vector%201.png" style="margin-left:-50px; height:15px; margin-top:23px;">
+                        <h1 style="color:chartreuse;">Free</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6" style="height: 100vh; opacity:0.6;">
+
+                <div style="z-index:1;">
+                    <video id="myVideo" autoplay muted style="height:100vh; position:absolute; top:0; right:0; z-index: 0;">
+
+                    </video>
+                    <script>
+                        var videoUrls = [
+                            "https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/amazon-video.mp4",
+                            "https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/mysys.mp4",
+                            "https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/uber-video.mp4",
+                            "https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/slice-video.mp4",
+                            "https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/landing-section-bg-videos/superk-video.mp4"
+                        ];
+
+                        var player = document.getElementById('myVideo');
+                        var activeVideoIndex = 0;
+
+
+                        player.addEventListener('ended', function() {
+                            activeVideoIndex = (activeVideoIndex + 1) % videoUrls.length;
+                            player.src = videoUrls[activeVideoIndex];
+                            player.load();
+                            player.play();
+                        });
+
+                        player.src = videoUrls[activeVideoIndex];
+                        player.load();
+                        player.play();
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="Second">
+            <div class="text-center">
+                <div class="text-center pt-5 pb-4">
+                    <h1 class="p-5" style="font-size:50px;">Our Speaker Comes From <br>Your Dream Companies</h1>
+                </div>
+                <marquee loop="infinity" style="width:100vw; padding-bottom:40px;">
+                    <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/our-speaker-come-from-section/company-scroll-strip-row-1.png" height="60px">
+                </marquee>
+                <marquee loop="infinity" style="width:100vw; padding-bottom:90px;">
+                    <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/our-speaker-come-from-section/company-scroll-strip-row-2.png" height="60px">
+                </marquee>
+            </div>
+        </div>
+
+        <div class="row" id="Third">
+            <div class="col-12 rear-section">
+                <div class="text-center" style="width: 100%;">
+                    <h1 class="pb-3 pt-5 mt-5" style="width:100vw;">A rear Collection of Insider <br> Knowledge, All Yours!</h1>
+                    <p class="pb-5" style="color:gray; width:100;">All secrets uncovered. Exclusive insights, Timely Advice and Personal growth<br> journeys Straight from tech experts.</p>
+                    <div class="d-flex flex-row text-center justify-content-center">
+                        <button href="#" class="btn btn-outline-secondary btn-rounded ml-3 mr-3" style="color:white; border:1px solid white; border-radius:25px;">Trending</button>
+                        <button class="btn btn-outline-secondary btn-rounded ml-3 mr-3" style="color:white; border:1px solid white; border-radius:25px;">All</button>
+                        <button class="btn btn-outline-secondary btn-rounded ml-3 mr-3" style="color:white; border:1px solid white; border-radius:25px;">Tech</button>
+                        <button class="btn btn-outline-secondary btn-rounded ml-3 mr-3" style="color:white; border:1px solid white; border-radius:25px;">Career</button>
+                        <button class="btn btn-outline-secondary btn-rounded ml-3 mr-3" style="color:white; border:1px solid white; border-radius:25px;">CXO</button>
+                        <button class="btn btn-outline-secondary btn-rounded ml-3 mr-3" style="color:white; border:1px solid white; border-radius:25px;">Productivity</button>
+                        <button class="btn btn-outline-secondary btn-rounded ml-3 mr-3" style="color:white; border:1px solid white; border-radius:25px;">GSOC</button>
+                        <button class="btn btn-outline-secondary btn-rounded ml-3 mr-3" style="color:white; border:1px solid white; border-radius:25px;">Panel</button>
+                    </div>
+                    <div class="trending-section d-flex flex-row justify-content-center">
+                        <div class="trending-box mt-4 mr-4">
+                            <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sandeep.png" width="100%" height="200px" style="border-radius:20px 20px 0px 0px;">
+                            <a href="https://youtu.be/YDfL0TfKS3M" class="d-flex flex-row justify-content-start"><button style="position:relative; bottom:50px; left:15px; border-radius: 25px;" class="btn btn-primary">Trailer</button></a>
+                            <div class="text-left" style="padding:16px 16px 16px 28px;">
+                                <h5>An Engineering Manager at Uber Teaches Programming</h5>
+                                <div class="d-flex flex-row">
+                                    <img alt="" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" height="30px" width="32px" style="padding:5px 12px 0px 0px;">
+                                    <p style="padding-top:6px; color:gray;">45:17 Mins</p>
+                                </div>
+                                <h5 style="color:gray;"><b>Sandeep Gorthi</b></h5>
+                                <p style="color:gray;">Engineering manager at Uber</p>
+                                <a style="text-decoration: none;" href="#model1">What You Will Learn <i class="fa-solid fa-arrow-right"></i></a>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="trending-box mt-4 mr-4">
+                            <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/pritesh.png" width="100%" height="200px" style="border-radius:20px 20px 0px 0px;">
+                            <a href="https://youtu.be/YDfL0TfKS3M" class="d-flex flex-row justify-content-start"><button style="position:relative; bottom:50px; left:15px; border-radius: 25px;" class="btn btn-primary">Trailer</button></a>
+                            <div class="text-left" style="padding:16px 16px 16px 28px;">
+                                <h5>A Sr. Recuiter at Amazon Teaches Acing <br> Interviews</h5>
+                                <div class="d-flex flex-row">
+                                    <img alt="" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" height="30px" width="32px" style="padding:5px 12px 0px 0px;">
+                                    <p style="padding-top:6px; color:gray;">41.07 Mins</p>
+                                </div>
+                                <h5 style="color:gray;"><b>Pritesh Malode</b></h5>
+                                <p style="color:gray;">Senior Recruiter at Amazon</p>
+                                <a style="text-decoration: none;" href="#model2">What You Will Learn <i class="fa-solid fa-arrow-right"></i></a>
+                                <br>
+                            </div>
+                        </div>
+
+                        <div class="trending-box mt-4 mr-4">
+                            <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/rare-collection-of-insider-knowledge/sanjay.png" width="100%" height="200px" style="border-radius:20px 20px 0px 0px;">
+                            <a href="https://youtu.be/YDfL0TfKS3M" class="d-flex flex-row justify-content-start"><button style="position:relative; bottom:50px; left:15px; border-radius: 25px;" class="btn btn-primary">Trailer</button></a>
+                            <div class="text-left" style="padding:16px 16px 16px 28px;">
+                                <br>
+                                <h5>A Global CEO Teaches Mastering Time Management</h5>
+                                <div class="d-flex flex-row">
+                                    <img alt="" src="https://assets-global.website-files.com/642c0b2b12c402f7d9255170/642c0b2b12c4027fbd255446_clock.png" height="30px" width="32px" style="padding:5px 12px 0px 0px;">
+                                    <p style="padding-top:6px; color:gray;">45:17 Mins</p>
+                                </div>
+                                <h6 style="color:gray;"><b>Sanjay Sehgal</b></h6>
+                                <p style="color:gray;">Chairman & CEO at Msys Techs</p>
+                                <a style="text-decoration: none;" href="#model3">What You Will Learn <i class="fa-solid fa-arrow-right"></i></a>
+                                <br>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pt-4 mt-5">
+                        <button class="btn btn-primary " style="padding:10px 150px 10px 150px; border-radius:10px; ">Claim free Access</button>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center">
+                        <p class="pt-3">Get 1 Podcast worth 2000 </p><img alt="" src="https://assets-global.website-files.com/64362e90abbff481a6d25ce8/64362e90abbff450f5d25f9f_Vector%201.png" style="margin-left:-50px; height:15px; margin-top:23px;">
+                        <h1 style="color:chartreuse;">Free</h1>
+                    </div>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="Forth">
+            <div class="col-12" style="height:100vh;">
+                <br>
+                <h1 class="pt-5 mt-5 text-center">Students say,<br> It's a Blockbuster!</h1>
+                <div class="d-flex flex-row" style="border-radius:25px; border:1px solid orangered; margin:15px 550px 0px 550px; padding: 10px; background-color:rgb(107, 95, 74);">
+                    <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/emoji-icon.png" height="30px" width="30px" style="opacity:1;">
+                    <span style="color:orange; margin:4px -5px 3px 10px;">25000+ Happy Feedbacks</span>
+                </div>
+                <div class="swiper mySwiper" style="position:relative; right:150px;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-row pt-3 pl-3 pr-3 pb-1 ml-3">
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/rahul-gunturi-linkedin-profile-pic.png" height="70px" width="70px">
+                                <div class="text-left ml-3">
+                                    <h3> Rahul Gunturi</h3>
+                                    <p>Fellow at CCBP 4.0 academy | NxtWave</p>
+                                </div>
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="ml-1 mb-5">
+                            </div>
+                            <div class="text-left pl-3">
+                                <p>These podcasts are beneficial to us as it acts as a bridge, helping us to understand what to do next and how to face situations in life. Thanks ...
+                                    <a href="https://www.linkedin.com/posts/rrahulguturii_saikirangorthi-nxtwave-google-activity-7030427567677468672-SU3Y/?utm_source=share&utm_medium=member_desktop" style="text-decoration: none;">Read More on Linkedin</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-row pt-3 pl-3 pr-3 pb-1 ml-3">
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/sai-rohith-linkedin-profile-pic.png" height="70px" width="70px">
+                                <div class="text-left ml-3">
+                                    <h3>Sai Rohith</h3>
+                                    <p> Fellow at CCBP 4.0 academy | NxtWave</p>
+                                </div>
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="ml-1 mb-5">
+                            </div>
+                            <div class="text-left pl-3">
+                                <p> As a CCBP 4.0 Academy student, I feel very lucky that I get access to the knowledge of top-notch experts with ease. Thanks to NxtWave ...
+                                    <a href="https://www.linkedin.com/posts/sairohithg_nxtwave-ccbp-ccbpian-activity-6961426917317124096-OU8N?utm_source=share&utm_medium=member_desktop" style="text-decoration: none;">Read More on Linkedin</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-row pt-3 pl-3 pr-3 pb-1 ml-3">
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/neha-panakanapalli-linkedin-profile-pic.png" height="70px" width="70px">
+                                <div class="text-left ml-3">
+                                    <h3>Neha Panakanapalli</h3>
+                                    <p>Fellow at CCBP 4.0 academy | NxtWave</p>
+                                </div>
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="ml-1 mb-5">
+                            </div>
+                            <div class="text-left pl-3">
+                                <p>These podcasts are really special! I started listening from a student perspective and ended up learning the product manager's perspective ...
+                                    <a href="https://www.linkedin.com/posts/neha-panakanapalli-074210247_podcast-language-programming-activity-7007598726974238720-PZje?utm_source=share&utm_medium=member_desktop" style="text-decoration: none;">Read More on Linkedin</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-row pt-3 pl-3 pr-3 pb-1 ml-3">
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/rupesh-reddy-loka-linkedin-profile-pic.png" height="70px" width="70px">
+                                <div class="text-left ml-3">
+                                    <h3>Rupesh Reddy Loka</h3>
+                                    <p>Fellow at CCBP 4.0 academy | NxtWave</p>
+                                </div>
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="ml-1 mb-5">
+                            </div>
+                            <div class="text-left pl-3">
+                                <p>After Gowtham sir's podcast, I got really motivated with some of his insights and experiences and also noted some points! He enlightened ...
+                                    <a href="https://www.linkedin.com/posts/rupesh-reddy-loka_podcast-gowthamreddy-nxtwave-activity-6982297960650850304-uCVU?utm_source=share&utm_medium=member_desktop" style="text-decoration: none;">Read More on Linkedin</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex flex-row pt-3 pl-3 pr-3 pb-1 ml-5">
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/narasimha-naidu-talari-linkedin-profile-pic.png" height="70px" width="70px">
+                                <div class="text-left ml-5">
+                                    <h3> Narasimha Naidu Talari</h3>
+                                    <p>Fellow at CCBP 4.0 academy | NxtWave</p>
+                                </div>
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="ml-1 mb-5">
+                            </div>
+                            <div class="text-left pl-3">
+                                <p>Ma'am answered all our student questions and shared her experience on how to build the best career in IT! It is very useful to me , Thank you ...
+                                    <a href="https://www.linkedin.com/posts/narasimha-naidu-talari-553622248_podcast-nxtwaveteam-experience-activity-6997446557964939264-rjPM?utm_source=share&utm_medium=member_desktop" style="text-decoration: none;">Read More on Linkedin</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex felx-row pt-3 pl-3 pr-3 pb-1 ml-5">
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/gunda-vamshi-linkedin-profile-pic.png" height="70px" width="70px">
+                                <div class="text-left ml-5">
+                                    <h3>Gunda Vamshi</h3>
+                                    <p>Fellow at CCBP 4.0 academy | NxtWave</p>
+                                </div>
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="ml-1 mb-5">
+                            </div>
+                            <div class="text-left pl-3">
+                                <p>Very excellent and learnt many insights from the podcast. I really thank to Archita ma'am for delivering such great insights in the podcast. ...
+                                    <a href="https://www.linkedin.com/posts/gunda-vamshi-034137216_ccbp-ccbpian-ccbpacademy-activity-6997442879845543936-x8PF?utm_source=share&utm_medium=member_desktop" style="text-decoration: none;">Read More on Linkedin</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="d-flex felx-row pt-3 pl-3 pr-3 pb-1 ml-5">
+                                <img alt="" src=" https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/nafiya-linkedin-profile-pic.png" height="70px" width="70px">
+                                <div class="text-left ml-5">
+                                    <h3>N S Nafiya</h3>
+                                    <p>Fellow at CCBP 4.0 academy | NxtWave</p>
+                                </div>
+                                <img alt="" src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/student-testimonials/linkedin-logo.svg" class="ml-1 mb-5">
+                            </div>
+                            <div class="text-left pl-3">
+                                <p> I learned about Amazon's 4C's of hiring. The podcast provided great insights into the recruiter's perspective and the company's evaluation ...
+                                    <a href="https://www.linkedin.com/posts/n-s-nafiya_nxtwave-rahulattuluri-ccbpian-activity-7022859013105098752-jL7y?utm_source=share&utm_medium=member_desktop" style="text-decoration: none;">Read More on Linkedin</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        freeMode: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                    });
+                </script>
+            </div>
+        </div>
+
+        <div class="row empowering-section" id="Fifth">
+            <div style="margin:100px;" class="col-12">
+                <h1 style="font-size: 45px; margin-bottom:70px;"><b>NxtWave's Empowering Podcast Series <br>to Shape your Dream Career</b></h1>
+                <div class="d-flex flex-row mb-4">
+                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/nxtwaves-empowering-podcast-section/mic-logo.svg" alt="">
+                    <h3 class="" style="margin:14px 0px 0px 10px;">100+ Podcasts</h3>
+                </div>
+                <div class="d-flex flex-row mb-4">
+                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/nxtwaves-empowering-podcast-section/rupee-logo.svg" alt="">
+                    <h3 class="" style="margin:14px 0px 0px 10px;">Each worth ₹2000/-</h3>
+                </div>
+                <div class="d-flex flex-row mb-4">
+                    <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/podcast/nxtwaves-empowering-podcast-section/flame-logo.svg" alt="">
+                    <h3 class="" style="margin:14px 0px 0px 10px;">FREE for NxtWave Academy students</h3>
+                </div>
+                <div class="pt-4">
+                    <button class="btn btn-primary " style="padding:10px 150px 10px 150px; border-radius:10px;">Claim free Access</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="Sixth">
+            <div class="col-7" style="padding:100px; margin-top: 30px;">
+                <h1 style="font-size: 45px;">Claim Your <br>Free Access to a Podcast</h1>
+            </div>
+            <div class="col-5 otp-section">
+                <div style="margin:50px 0px 50px 50px;">
+                    <h5>Name</h5>
+                    <div style="margin-bottom:20px;">
+                        <input type="text" placeholder="    Your Name" label="Your Name" class="otp-get-section">
+                    </div>
+                    <h5>Phone Number</h5>
+                    <div style="margin-bottom:20px;">
+                        <input type="text" placeholder="   IN +91 Enter 10 Digit Mobile Number" label="Your Name" class="otp-get-section">
+                    </div>
+                    <div class="pt-4">
+                        <button class="btn btn-primary " style="padding:10px 200px 10px 200px; border-radius:10px; ">Get OTP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="Seventh">
+            <div class="col-12 starnote-section d-flex align-items-center">
+                <h5 class="pt-3">* The speaker profiles are as on the recorded date</h5>
+            </div>
+        </div>
+
+        <div class="row " style="padding:80px 100px 80px 100px;" id="Eighth">
+            <div class="col-5">
+                <img src="https://nxtwave-website-media-files.s3.ap-south-1.amazonaws.com/ccbp-website/Nxtwave_White_logo.svg" alt="">
+                <br>
+                <br>
+                <h4 style="color:#5a7184;"><b>Reach Us</b></h4>
+                <div class="d-flex flex-row">
+                    <img src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3c91504378bb16eca4973_mail-icon.svg" alt="">
+                    <p class="pt-2 mt-2 ml-3" style="color:dimgray">support@nxtwave.tech</p>
+                </div>
+            </div>
+            <div class="col-3">
+                <h4 style="color:#5a7184;" class="ml-3"><b>Quick links</b></h4>
+                <div class="d-flex flex-row">
+                    <div style="color: #959ead">
+                        <p class="pt-2 mt-2 ml-3 policy-section">Home</p>
+                        <p class="pt-2 mt-2 ml-3 policy-section">Academy</p>
+                        <p class="pt-2 mt-2 ml-3 policy-section">Intensive</p>
+                        <p class="pt-2 mt-2 ml-3 policy-section">Hire with us</p>
+                    </div>
+                    <div style="color: #959ead">
+                        <p class="pt-2 mt-2 ml-3 policy-section">Contact us</p>
+                        <p class="pt-2 mt-2 ml-3 policy-section">About us</p>
+                        <p class="pt-2 mt-2 ml-3 policy-section">Reviews</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <h4 style="color:#5a7184;" class="ml-3"><b>Payment Methods</b></h4>
+                <div class="d-flex flex-row ml-4">
+                    <img alt="" src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3c93dfbc8568fcb27e556_visa-icon.svg" class="m-2">
+                    <img alt="" src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3c976a29a435d3fc17f27_mastercard-icon.svg" class="m-2">
+                    <img alt="" src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fcf36619310922216dcb_payment-method-icon3.svg" class="m-2">
+                </div>
+                <div class="d-flex flex-row ml-4">
+                    <img alt="" src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fcf46ba93fa0919d5828_Razor-pay-icon.svg" class="m-2">
+                    <img alt="" src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fcf34a02bed6c7dbc750_upi-icon.svg" class="m-2">
+                    <img alt="" src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fd566ba93f145d9d5b57_rupay-icon.svg" class="m-2">
+                </div>
+                <br>
+                <div class="d-flex flex-row">
+                    <img alt="" src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/618dff87c4047e7681214d33_location%20on.svg">
+                    <p class="ml-3" style="margin-bottom:-60px; color:#959ead;">NxtWave, WeWork Rajapushpa<br> Summit, Nanakramguda Rd,<br> Financial District, Manikonda Jagir, Telangana 500032</p>
+                </div>
+            </div>
+            <div class="col-12 mt-5">
+                <hr style="color:#959ead; border:0.5px solid #959ead;">
+            </div>
+            <div class="col-3">
+                <a class="m-2" href="https://www.facebook.com/NxtWave-106729994530632/"><img alt="" src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fd520d11331f5f3b46ef_facebook-icon.svg"></a>
+                <a class="m-2" href="https://www.instagram.com/ccbp_nxtwave/"><img alt="" src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fe609dc6ce25f2f7078f_instgram-icon.svg"></a>
+                <a class="m-2" href="https://twitter.com/nxtwave_tech"><img alt="" src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f400cc41af69932df92c8a_twitterimage.svg"></a>
+                <a class="m-2" href="https://www.linkedin.com/company/nxtwavetech"><img alt="" src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/61f3fe1a40dc31c249e1ab99_linkedin-icon.svg"></a>
+                <a class="m-2" href="https://www.youtube.com/c/NxtWaveTech"><img alt="" src="https://assets-global.website-files.com/5fa61cbbf0d432b3230f62b1/62384993d97ad72405dee8d2_Frame 31 (1).svg"></a>
+            </div>
+            <div class="col-9">
+                <div class="d-flex flex-row" style="color:#959ead;">
+                    <p class="policy-section">Privacy Policy</p>
+                    <p class="policy-section">Cookie Policy</p>
+                    <p class="policy-section">Terms and Conditions</p>
+                    <p class="policy-section">Grievance Redressal</p>
+                    <p class="policy-section">Corporate Information</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
